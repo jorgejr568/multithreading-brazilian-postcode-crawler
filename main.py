@@ -3,10 +3,7 @@ from formatter import PostcodeFormatter
 from thread import AddressViaCepCrawlerThreadFactory, AddressWidenetCrawlerThreadFactory, AddressFSOACrawlerThreadFactory
 import time
 
-THREADS_LIMIT = 100
-SLEEP_TIME = 10
-FIRST_CEP = int(1001000)
-THREAD_FACTORY = AddressFSOACrawlerThreadFactory
+THREADS_LIMIT, SLEEP_TIME, FIRST_CEP, THREAD_FACTORY = 150, 5, int(1001000), AddressFSOACrawlerThreadFactory
 
 listed_addresses = AddressFile.list()
 
